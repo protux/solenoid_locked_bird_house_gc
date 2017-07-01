@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>O pulchram avem!</title>
+        <link rel="stylesheet" type="text/css" href="/piano.css" />
+        <meta property="og:image" content="/piano.png">
+        <link rel="image_src" href="/piano.png" />
+        <noscript>
+          Um den Cache erfolgreich zu absolvieren musst du JavaScript in deinem Browser aktivieren.
+        </noscript>
+    </head>
+    <body>
+        <div id="content">
+            <div id="content-inner">
+                <div id="piano">
+                    <!--<h1>Javascript Piano</h1>-->
+                    <div class="help show" tabindex="1">
+                        <div class="help-inner">
+                            <div id="synth-settings"></div>
+                            <div class="opts">
+                                <p><strong>Controls:</strong></p>
+                                <p>play using home row &amp; above &nbsp; /</p>
+                                <p>change playable keys: “,” &amp; “.” &nbsp; /</p>
+                                <p>shift keyboard: ← &amp; → <span id="shift"></span></p>
+                            </div>
+                            <div class="opts">
+                                <p><strong>Extras:</strong></p>
+                                <p class="toggle-color toggle hold">Color - c &nbsp; /</p>
+                                <p class="toggle-demo toggle">Demo - m &nbsp; /</p>
+                                <p class="toggle-animate toggle">Visual mode - 8 &nbsp; /</p>
+                                <p class="toggle-looper">Looper - 9 &nbsp; /</p>
+                                <p>Help - 0</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="loop" tabindex="2">loop</div>
+                </div>
+            </div>
+        </div>
+        
+        <p>Dieser Cache wird mit <a href="https://de.wikipedia.org/wiki/Freie_Software#Definition">freier Software</a> betrieben (siehe <a href="https://gitlab.com/protux/solenoid_locked_bird_house_gc">hier</a>).</p>
+        
+        <audio id="audioplayer">
+            <source src="mm.mp3" type="audio/mpeg">
+        </audio>
+        
+        <script type="text/javascript">
+            var audio = document.getElementById("audioplayer"); 
+            audio.pause();
+        </script>
+        <script type="text/javascript" src="/jquery.js"></script>
+        <script type="text/javascript" src="/audio.js"></script>
+        <script type="text/javascript" src="/piano.js"></script>
+    </body>
+</html>
